@@ -1,0 +1,40 @@
+.hobbies{
+    margin-top:100px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #4C87E5;
+}
+
+h2{
+    color: #4C87E5;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.hobbies-grid__item {
+    background: white;
+    border-radius: 1em;
+    padding: 15px;
+
+    text-align: center;
+}
+
+.hobby-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+    }
+}
